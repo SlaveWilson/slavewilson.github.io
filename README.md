@@ -15,7 +15,7 @@ npm run dev
 npm run build
 ```
 
-### Start hosting for producting (Required [http-server](https://github.com/http-party/http-server#readme){:target="_blank"})
+### Start hosting for producting (Required ![http-server](https://github.com/http-party/http-server#readme))
 ```
 npm start
 ```
