@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.6695ea0a46115ae9c436644cc60903c9.js"
+  "/precache-manifest.b997a2983685d06b568ec90007734913.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "slavewilson.github.io"});
