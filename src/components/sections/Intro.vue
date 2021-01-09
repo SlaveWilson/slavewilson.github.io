@@ -1,9 +1,13 @@
 <template lang="pug">
-.container
-  h1 Hello;
+h1 Hello;
+.paragraph
   p I am Tommy Ng;
   p a frontend/game developer;
-  p speclizing in website and game developmemnt;
+  p specializing in website and game developmemnt;
+.paragraph
+  p You can see some of my works below;
+  p for more detail;
+  p please feel free to visit my #[a(href="https://github.com/SlaveWilson", target="_blank") github];
 </template>
 
 <script lang="ts">
@@ -15,6 +19,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.container {
+h1 {
+  margin-top: 2em;
+}
+.paragraph {
+  margin-top: 2em;
 }
 </style>

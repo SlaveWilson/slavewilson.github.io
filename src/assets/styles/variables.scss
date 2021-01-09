@@ -14,6 +14,7 @@ $tablet: 768px;
 }
 
 $colors: (primary: #121314,
+  secondary: #66d9ef,
 );
 
 @function color($color-name) {
