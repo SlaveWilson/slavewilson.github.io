@@ -1,7 +1,7 @@
 <template lang="pug">
 main
   section.fullpage
-    h1 Section 1
+    Intro
   section.fullpage
     h1 Section 2
   section.fullpage
@@ -20,14 +20,17 @@ main
 
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, Ref, ref } from "vue";
+import Intro from "@/components/sections/Intro.vue";
 
 export default defineComponent({
   name: "App",
+  components: {
+    Intro,
+  },
   setup() {
     let inMove = false;
     const activeSection = ref(0);
-    const offsets: Ref<Array<number> | undefined> = ref();
-    offsets.value = [];
+    const offsets: Ref<Array<number> | undefined> = ref([]);
     let touchStartY = 0;
 
     const calculateSectionOffsets = function () {
@@ -36,7 +39,7 @@ export default defineComponent({
 
       for (let i = 0; i < length; i++) {
         const sectionOffset = sections[i].offsetTop;
-        offsets.value!.push(sectionOffset);
+        if (offsets.value !== undefined) offsets.value.push(sectionOffset);
       }
     };
 
@@ -57,14 +60,17 @@ export default defineComponent({
     const moveDown = function () {
       inMove = true;
       activeSection.value--;
-      if (activeSection.value < 0) activeSection.value = offsets.value!.length - 1;
+      if (activeSection.value < 0 && offsets.value !== undefined)
+        activeSection.value = offsets.value.length - 1;
       scrollToSection(activeSection.value, true);
     };
 
     const moveUp = function () {
       inMove = true;
       activeSection.value++;
-      if (activeSection.value > offsets.value!.length - 1) activeSection.value = 0;
+      if (offsets.value !== undefined) {
+        if (activeSection.value > offsets.value.length - 1) activeSection.value = 0;
+      }
       scrollToSection(activeSection.value, true);
     };
 
@@ -118,8 +124,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .fullpage {
-  height: 100vh;
-  width: 100%;
+  height: 90vh;
+  width: 80vw;
+  padding: 5vh 10vw;
 }
 .sections-menu {
   position: fixed;
@@ -130,7 +137,7 @@ export default defineComponent({
 .sections-menu .menu-point {
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: color(primary);
   display: block;
   margin: 1rem 0;
   opacity: 0.6;

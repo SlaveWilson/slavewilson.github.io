@@ -1,8 +1,8 @@
 @import "./reset.scss";
+@import "./font.scss";
 
 body {
   overflow: hidden;
-
   font-family: 'Rubik',
     -apple-system,
     BlinkMacSystemFont,
@@ -16,6 +16,9 @@ body {
     sans-serif;
   font-size: calc(10px + 0.33vw);
   -webkit-font-smoothing: antialiased;
-  color: #121314;
-  background-color: cyan;
+  color: color(primary);
+}
+
+.container {
+  height: 100%;
 }
