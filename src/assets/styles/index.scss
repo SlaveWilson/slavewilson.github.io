@@ -1,5 +1,6 @@
 @import "./reset.scss";
 @import "./font.scss";
+@import "./common.scss";
 
 body {
   overflow: hidden;
@@ -17,6 +18,12 @@ body {
   font-size: calc(10px + 0.33vw);
   -webkit-font-smoothing: antialiased;
   color: color(primary);
+}
+
+.container {
+  height: 90vh;
+  width: 80vw;
+  padding: 5vh 10vw;
 }
 
 a {
@@ -52,8 +59,4 @@ a::after {
 
 a:hover::after {
   animation: bounce 0.75s ease-in-out alternate;
-}
-
-.container {
-  height: 100%;
 }

@@ -83,7 +83,6 @@ export default defineComponent({
     };
 
     const touchStart = function (e: TouchEvent) {
-      e.preventDefault();
       touchStartY = e.touches[0].clientY;
     };
 
@@ -124,9 +123,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .fullpage {
-  height: 90vh;
-  width: 80vw;
-  padding: 5vh 10vw;
+  height: 100vh;
+  width: 100vw;
 }
 .sections-menu {
   position: fixed;
