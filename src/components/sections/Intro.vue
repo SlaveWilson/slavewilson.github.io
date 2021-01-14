@@ -10,6 +10,7 @@
       p You can see some of my works below;
       p for more detail;
       p please feel free to visit my #[a(href="https://github.com/SlaveWilson", target="_blank") github];
+  .content.bg-secondary
   //- .content
   //-   picture.relative
   //-     source(media="(min-width:768px)", srcset="@/assets/images/dog-desktop.jpg")
@@ -62,5 +63,9 @@ h1 {
     margin-top: 4em;
     // margin-left: 6em;
   }
+}
+
+.bg-secondary {
+  background: color(secondary);
 }
 </style>

@@ -3,7 +3,7 @@ main
   section.fullpage
     Intro
   section.fullpage
-    h1 Section 2
+    Works
   section.fullpage
     h1 Section 3
   section.fullpage
@@ -21,11 +21,13 @@ main
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, Ref, ref } from "vue";
 import Intro from "@/components/sections/Intro.vue";
+import Works from "@/components/sections/Works.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     Intro,
+    Works,
   },
   setup() {
     let inMove = false;
