@@ -9,7 +9,7 @@
       p You can see some of my works below;
       p for more detail, please feel free to visit my #[a(href="https://github.com/SlaveWilson", target="_blank") github];
   .content.flex-none.swipe.z-1
-    p.strong Swipe Down To Learn More
+    p.strong Scroll For More
   .absolute.image.z-0
     .absolute.backdrop.z-1
     picture
@@ -68,7 +68,7 @@ h1 {
   bottom: 0;
   right: 0;
   left: 0;
-  background: rgba(color(primary), 0.15);
+  background: rgba(color(primary), 0.3);
 }
 
 img {

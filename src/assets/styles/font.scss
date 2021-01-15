@@ -3,6 +3,10 @@ h1 {
   font-weight: 500;
 
   @include tablet {
+    font-size: 5rem;
+  }
+
+  @include desktop {
     font-size: 6rem;
   }
 }
