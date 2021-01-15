@@ -15,7 +15,7 @@ $tablet: 768px;
 
 $colors: (primary: #121314,
   secondary: #66d9ef,
-);
+  grey: #f4f5f5);
 
 @function color($color-name) {
   @return map-get($colors, $color-name);

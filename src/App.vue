@@ -5,21 +5,25 @@ main
   section
     WorkValue
   section.fullpage
-    h1 Section 3
-  section.fullpage
-    h1 Section 4
+    Game
+  section
+    Noq
 </template>
 
 <script lang="ts">
 import { defineComponent, onMounted, onUnmounted, Ref, ref } from "vue";
 import Intro from "@/components/sections/Intro.vue";
 import WorkValue from "@/components/sections/WorkValue.vue";
+import Game from "@/components/sections/Game.vue";
+import Noq from "@/components/sections/Noq.vue";
 
 export default defineComponent({
   name: "App",
   components: {
     Intro,
     WorkValue,
+    Game,
+    Noq,
   },
 });
 </script>

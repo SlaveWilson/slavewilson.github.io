@@ -1,6 +1,6 @@
 <template lang="pug">
-p.sub-title my work 01;
-h2 #[.strong My Work Value. 2019.] Developed for CLAP for Youth@JC using #[a(href="https://unity.com/", target="_blank") Unity]
+p.sub-title my work 02;
+h2 #[.strong NoQ Product Page. 2020.] Developed for Redso using #[a(href="https://vuejs.org", target="_blank") Vue], #[a(href="https://nuxtjs.org/", target="_blank") Nuxt] and #[a(href="https://strapi.io/", target="_blank") Strapi]
 .flex.images
   .flex-full
     img.small(src="@/assets/images/workvalue-sm.jpg")
@@ -9,6 +9,9 @@ h2 #[.strong My Work Value. 2019.] Developed for CLAP for Youth@JC using #[a(hre
 .description
   p.sub-title description;
   p.content Built for mobile and web platform. A causal game where player need to drag their fingers or cursors on the screen to apply force to the character. Mainly using #[span.strong Unity's 2D Physics Engine] and #[span.strong Sprite System] to build the game.
+.link
+  p.sub-title link;
+  p.content #[a(href="https://nuxtjs.org/", target="_blank") NoQ Website Url]
 </template>
 
 <script lang="ts">
@@ -80,7 +83,6 @@ img {
 
 .description {
   margin-top: 1em;
-  margin-bottom: 16em;
 }
 
 .content {
@@ -89,5 +91,10 @@ img {
   margin-bottom: 1em;
   margin-left: 4vw;
   font-size: calc(2.2rem + 0.33vw);
+}
+
+.link {
+  margin-top: 1em;
+  margin-bottom: 16em;
 }
 </style>

@@ -4,7 +4,8 @@
     h1 Hello;
     .paragraph
       p I am Tommy Ng;
-      p a frontend/game developer; specializing in website and game developmemnt;
+      p a frontend/game developer; 
+      p specializing in  #[a(href="https://vuejs.org/", target="_blank") Vue], #[a(href="https://nuxtjs.org/", target="_blank") Nuxt] and #[a(href="https://unity.com/", target="_blank") Unity];
     .paragraph
       p You can see some of my works below;
       p for more detail, please feel free to visit my #[a(href="https://github.com/SlaveWilson", target="_blank") github];
