@@ -28,6 +28,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .container {
   flex-direction: column;
+  color: white;
 }
 
 .content {

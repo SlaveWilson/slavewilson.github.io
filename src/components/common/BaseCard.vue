@@ -12,6 +12,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .card {
-  background: color(secondary);
+  // background: color(secondary);
 }
 </style>
