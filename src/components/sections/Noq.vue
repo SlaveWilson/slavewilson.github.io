@@ -11,7 +11,7 @@ h2 #[.strong NoQ Product Page. 2020.] Developed for Redso using #[a(href="https:
   p.content Built for mobile and web platform. A causal game where player need to drag their fingers or cursors on the screen to apply force to the character. Mainly using #[span.strong Unity's 2D Physics Engine] and #[span.strong Sprite System] to build the game.
 .link
   p.sub-title link;
-  p.content #[a(href="https://nuxtjs.org/", target="_blank") NoQ Url]
+  p.content #[a(href="https://www.noq.hk/", target="_blank") NoQ Url]
 </template>
 
 <script lang="ts">

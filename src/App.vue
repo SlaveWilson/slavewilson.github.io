@@ -11,7 +11,7 @@ main
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUnmounted, Ref, ref } from "vue";
+import { defineComponent } from "vue";
 import Intro from "@/components/sections/Intro.vue";
 import WorkValue from "@/components/sections/WorkValue.vue";
 import Game from "@/components/sections/Game.vue";
