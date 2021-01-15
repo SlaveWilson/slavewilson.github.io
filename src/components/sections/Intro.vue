@@ -1,22 +1,20 @@
 <template lang="pug">
-.flex.container
-  .content
+.flex.container.bg-primary.relative
+  .content.flex-full.z-1
     h1 Hello;
     .paragraph
       p I am Tommy Ng;
-      p a frontend/game developer;
-      p specializing in website and game developmemnt;
+      p a frontend/game developer; specializing in website and game developmemnt;
     .paragraph
       p You can see some of my works below;
-      p for more detail;
-      p please feel free to visit my #[a(href="https://github.com/SlaveWilson", target="_blank") github];
-  .content.bg-secondary
-  //- .content
-  //-   picture.relative
-  //-     source(media="(min-width:768px)", srcset="@/assets/images/dog-desktop.jpg")
-  //-     img.image(src="@/assets/images/dog-mobile.jpg")
-  //-     .caption.absolute
-  //-       p This is my sister's dog. Just want to show you how cute he is.
+      p for more detail, please feel free to visit my #[a(href="https://github.com/SlaveWilson", target="_blank") github];
+  .content.flex-none.swipe.z-1
+    p.strong Swipe Down To Learn More
+  .absolute.image.z-0
+    .absolute.backdrop.z-1
+    picture
+      source(media="(min-width:768px)", srcset="@/assets/images/dog-desktop.jpg")
+      img(src="@/assets/images/dog-mobile.jpg")
 </template>
 
 <script lang="ts">
@@ -28,18 +26,12 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.flex {
+.container {
   flex-direction: column;
-  @include desktop {
-    flex-direction: row;
-  }
 }
 
 .content {
-  width: 80vw;
-  @include tablet {
-    width: 40vw;
-  }
+  width: 60vw;
 }
 
 h1 {
@@ -53,19 +45,34 @@ h1 {
   margin-top: 2em;
 }
 
-.image {
-  margin-top: 1em;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+.swipe {
+  margin-bottom: 2em;
+}
 
+.image {
+  bottom: 12em;
+  right: 4em;
   @include tablet {
-    max-width: 100%;
-    max-height: 70vh;
-    margin-top: 4em;
-    // margin-left: 6em;
+    bottom: 12em;
+    right: 6em;
+  }
+  @include desktop {
+    bottom: initial;
+    top: 8em;
+    right: 6em;
   }
 }
 
-.bg-secondary {
-  background: color(secondary);
+.backdrop {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(color(primary), 0.15);
+}
+
+img {
+  max-width: 40vw;
+  max-height: 80vh;
 }
 </style>

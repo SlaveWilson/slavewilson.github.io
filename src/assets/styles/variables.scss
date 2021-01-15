@@ -2,7 +2,7 @@ $desktop: 1024px;
 $tablet: 768px;
 
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{$desktop + 1}) {
     @content;
   }
 }

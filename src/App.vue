@@ -137,7 +137,7 @@ export default defineComponent({
 .sections-menu .menu-point {
   width: 10px;
   height: 10px;
-  background-color: color(primary);
+  background-color: white;
   display: block;
   margin: 1rem 0;
   opacity: 0.6;
