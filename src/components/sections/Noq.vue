@@ -6,7 +6,7 @@ h2 #[.strong NoQ Product Page. 2020.] Developed for Redso using #[a(href="https:
     img(src="@/assets/images/noq.jpg")
 .description
   p.sub-title description;
-  p.content Built for web and seo. A product website to demostrate products. Mainly focus on SEO using #[span.strong Server-side Rendering] to render to webpage.
+  p.content Built for web and seo. A product website to demostrate products. Mainly focus on SEO using #[span.strong Server-side Rendering] to render the webpage.
 .link
   p.sub-title link;
   p.content #[a(href="https://www.noq.hk/", target="_blank") NoQ Url]
