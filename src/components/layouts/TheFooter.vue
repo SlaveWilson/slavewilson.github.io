@@ -26,7 +26,7 @@ footer
 }
 
 hr {
-  border-top: 1px solid color(primary);
+  border-top: 0.5px solid color(primary);
   border-bottom: 0;
 }
 </style>
