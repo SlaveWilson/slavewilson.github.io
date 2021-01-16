@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build --dest docs",
+    "dev": "vue-cli-service serve",
     "start": "cd docs && http-server && cd .."
   },
   "dependencies": {
+    "alertifyjs": "^1.13.1",
     "core-js": "^3.6.5",
     "pug": "^3.0.0",
     "pug-plain-loader": "^1.1.0",
@@ -19,7 +20,7 @@
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-pwa": "^4.5.10",
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",

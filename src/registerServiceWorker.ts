@@ -1,32 +1,47 @@
 /* eslint-disable no-console */
 
 import { register } from 'register-service-worker'
+const alertify = require('alertifyjs')
+
+const notifyUserAboutUpdate = (worker: ServiceWorker | null) => {
+  alertify.confirm('new content!', () => {
+    worker?.postMessage({ action: "skipWaiting" })
+  })
+}
 
 if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
-    ready () {
+    ready() {
       console.log(
         'App is being served from cache by a service worker.\n' +
         'For more details, visit https://goo.gl/AFskqB'
       )
     },
-    registered () {
+    registered() {
       console.log('Service worker has been registered.')
     },
-    cached () {
+    cached() {
       console.log('Content has been cached for offline use.')
     },
-    updatefound () {
+    updatefound() {
       console.log('New content is downloading.')
     },
-    updated () {
+    updated(registration) {
       console.log('New content is available; please refresh.')
+      notifyUserAboutUpdate(registration.waiting)
     },
-    offline () {
+    offline() {
       console.log('No internet connection found. App is running in offline mode.')
     },
-    error (error) {
+    error(error) {
       console.error('Error during service worker registration:', error)
     }
   })
 }
+
+let refreshing: boolean
+navigator.serviceWorker.addEventListener("controllerchange", function () {
+  if (refreshing) return
+  window.location.reload()
+  refreshing = true
+})
