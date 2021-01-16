@@ -3,9 +3,9 @@ p.sub-title my work 01;
 h2 #[.strong My Work Value. 2019.] Developed for CLAP for Youth@JC using #[a(href="https://unity.com/", target="_blank") Unity]
 .flex.images
   .flex-full
-    img.small(src="@/assets/images/workvalue-sm.jpg")
+    img.small(src="@/assets/images/workvalue-sm.jpg", data-aos="zoom-out-up", data-aos-anchor-placement="center-center")
   .screenshot.flex-zero
-    img(src="@/assets/images/workvalue.jpg")
+    img(src="@/assets/images/workvalue.jpg", data-aos="fade-up-left")
 .description
   p.sub-title description;
   p.content Built for mobile and web platform. A causal game where players need to drag their fingers or cursors on the screen to apply forces to the character. Mainly using #[span.strong Unity's 2D Physics Engine] and #[span.strong Sprite System] to build the game.
@@ -47,6 +47,7 @@ h2 {
   margin-left: 1em;
   margin-right: 5vw;
   flex-direction: column;
+  overflow: hidden;
   @include desktop {
     flex-direction: row;
     align-items: flex-end;

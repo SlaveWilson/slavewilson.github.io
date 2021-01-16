@@ -3,7 +3,7 @@ p.sub-title my work 02;
 h2 #[.strong NoQ Product Page. 2020.] Developed for Redso using #[a(href="https://vuejs.org", target="_blank") Vue], #[a(href="https://nuxtjs.org/", target="_blank") Nuxt] and #[a(href="https://strapi.io/", target="_blank") Strapi]
 .flex.images
   .screenshot
-    img(src="@/assets/images/noq.jpg")
+    img(src="@/assets/images/noq.jpg", data-aos="zoom-out-up")
 .description
   p.sub-title description;
   p.content Built for web and seo. A product website to demostrate products. Mainly focus on SEO using #[span.strong Server-side Rendering] to render the webpage.
@@ -49,6 +49,7 @@ h2 {
   margin-right: 5vw;
   flex-direction: column;
   align-items: flex-end;
+  overflow: hidden;
   @include desktop {
     justify-content: flex-end;
     flex-direction: row;
