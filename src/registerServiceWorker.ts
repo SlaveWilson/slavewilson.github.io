@@ -4,7 +4,7 @@ import { register } from 'register-service-worker'
 const alertify = require('alertifyjs')
 
 const notifyUserAboutUpdate = (worker: ServiceWorker | null) => {
-  alertify.confirm('new content!', () => {
+  alertify.confirm('A new content has been found.', () => {
     worker?.postMessage({ action: "skipWaiting" })
   })
 }
