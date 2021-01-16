@@ -2,13 +2,11 @@
 p.sub-title my work 02;
 h2 #[.strong NoQ Product Page. 2020.] Developed for Redso using #[a(href="https://vuejs.org", target="_blank") Vue], #[a(href="https://nuxtjs.org/", target="_blank") Nuxt] and #[a(href="https://strapi.io/", target="_blank") Strapi]
 .flex.images
-  .flex-full
-    img.small(src="@/assets/images/workvalue-sm.jpg")
-  .screenshot.flex-zero
-    img(src="@/assets/images/workvalue.jpg")
+  .screenshot
+    img(src="@/assets/images/noq.jpg")
 .description
   p.sub-title description;
-  p.content Built for mobile and web platform. A causal game where player need to drag their fingers or cursors on the screen to apply force to the character. Mainly using #[span.strong Unity's 2D Physics Engine] and #[span.strong Sprite System] to build the game.
+  p.content Built for web and seo. A product website to demostrate products. Mainly focus on SEO using #[span.strong Server-side Rendering] to render to webpage.
 .link
   p.sub-title link;
   p.content #[a(href="https://www.noq.hk/", target="_blank") NoQ Url]
@@ -50,9 +48,10 @@ h2 {
   margin-left: 1em;
   margin-right: 5vw;
   flex-direction: column;
+  align-items: flex-end;
   @include desktop {
+    justify-content: flex-end;
     flex-direction: row;
-    align-items: flex-end;
   }
 }
 
@@ -72,9 +71,12 @@ img {
 }
 
 .screenshot {
-  max-width: min(100%, 512px);
+  max-width: min(100%, 768px);
+  @include desktop {
+    margin-right: 10vw;
+  }
   img {
-    max-width: min(100%, 512px);
+    max-width: min(100%, 768px);
     @include desktop {
       float: right;
     }

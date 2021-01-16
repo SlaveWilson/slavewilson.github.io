@@ -1,9 +1,8 @@
 <template lang="pug">
 .flex.justify-center.items-center.container
   .flex.flex-full.items-center.content
-    .ipad.flex-full.relative
+    a.ipad.flex-full.relative(href="https://slavewilson.itch.io/over-genius", target="_blank")
       .absolute
-    p.flex-none Mockup psd created by zlatko_plamenov - #[a(href="https://www.freepik.com/psd/mockup", target="_blank") www.freepik.com]
 </template>
 
 <style lang="scss" scoped>
@@ -14,6 +13,10 @@
 .content {
   height: 100%;
   flex-direction: column;
+}
+
+a::after {
+  content: none;
 }
 
 .ipad {

@@ -8,7 +8,7 @@ h2 #[.strong My Work Value. 2019.] Developed for CLAP for Youth@JC using #[a(hre
     img(src="@/assets/images/workvalue.jpg")
 .description
   p.sub-title description;
-  p.content Built for mobile and web platform. A causal game where player need to drag their fingers or cursors on the screen to apply force to the character. Mainly using #[span.strong Unity's 2D Physics Engine] and #[span.strong Sprite System] to build the game.
+  p.content Built for mobile and web platform. A causal game where players need to drag their fingers or cursors on the screen to apply forces to the character. Mainly using #[span.strong Unity's 2D Physics Engine] and #[span.strong Sprite System] to build the game.
 </template>
 
 <script lang="ts">
